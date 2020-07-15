@@ -6,13 +6,16 @@
 /*   By: lakazzie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 14:41:17 by lakazzie          #+#    #+#             */
-/*   Updated: 2020/07/12 14:45:06 by lakazzie         ###   ########.fr       */
+/*   Updated: 2020/07/15 11:44:29 by lakazzie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c);
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_putstr(char *str)
 {
